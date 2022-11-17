@@ -1,11 +1,6 @@
 @echo off
 
-echo ^[94m======================================================================================[0m
-echo ^[95m                                        Our Learning Cloud                            [0m
-echo ^[95m                                         by Bhavin Patel                              [0m
-echo ^[94m======================================================================================[0m
-
-echo ^[93m Out-of-box deployment will starting now...[0m
+echo 93m Out-of-box deployment will starting now...
 
 Write-Host -ForegroundColor Green "Create C:\Windows\System32\OOBETasks.CMD"
 $OOBETasksCMD = @'
