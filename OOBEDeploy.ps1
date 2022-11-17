@@ -13,7 +13,6 @@ $Params = @{
     UpdateWindows = $true
 }
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy @Params
-Start /Wait PowerShell -NoL -C Restart-Computer -Force
 '@
 $OOBETasksCMD | Out-File -FilePath 'C:\Windows\System32\OOBETasks.CMD' -Encoding ascii -Force
 
