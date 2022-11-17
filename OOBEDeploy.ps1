@@ -1,7 +1,3 @@
-@echo off
-
-echo 93m Out-of-box deployment will starting now...
-
 Write-Host -ForegroundColor Green "Create C:\Windows\System32\OOBETasks.CMD"
 $OOBETasksCMD = @'
 PowerShell -NoL -Com Set-ExecutionPolicy Unrestricted -Force
