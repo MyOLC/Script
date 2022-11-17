@@ -10,4 +10,4 @@ $Params = @{
     UpdateDrivers = $true
     UpdateWindows = $true
 }
-Start /Wait PowerShell -NoL -C Start-OOBEDeploy @Params
+Start-OOBEDeploy @Params
