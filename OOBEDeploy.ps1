@@ -1,5 +1,3 @@
-Write-Host -ForegroundColor Green "Create C:\Windows\System32\OOBETasks.CMD"
-$OOBETasksCMD = @'
 PowerShell -NoL -Com Set-ExecutionPolicy Unrestricted -Force
 Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
 Start /Wait PowerShell -NoL -C Install-Module AutopilotOOBE -Force -Verbose
@@ -13,6 +11,3 @@ $Params = @{
     UpdateWindows = $true
 }
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy @Params
-'@
-$OOBETasksCMD | Out-File -FilePath 'C:\Windows\System32\OOBETasks.CMD' -Encoding ascii -Force
-
