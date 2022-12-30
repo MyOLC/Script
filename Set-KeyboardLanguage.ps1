@@ -16,7 +16,7 @@ $LanguageList.Remove(($LanguageList | Where-Object LanguageTag -like 'en-GB'))
 Set-WinUserLanguageList $LanguageList -Force
 
 $LanguageList = Get-WinUserLanguageList
-$LanguageList.Remove(($LanguageList | Where-Object LanguageTag -like 'en-US'))
+$LanguageList.Remove(($LanguageList | Where-Object LanguageTag -like 'en-GB'))
 Set-WinUserLanguageList $LanguageList -Force
 
 Stop-Transcript
